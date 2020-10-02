@@ -4,6 +4,8 @@
 ## Table of contents
 * [Interesting topics](#Interesting_topics)
 * [Challenges](#challenges)
+* [GitUrl](#GitUrl)
+
 
 
 
@@ -13,4 +15,7 @@ In this class, Interesting topics to me will be creating more advanced Graphical
 
 ## Challenges 
 The challenges for me in the class will most likely be sorting algorithms, recursion, polymorphism, exceptions and math related python stuff. 
+
+## GitUrl
+https://github.com/stephe00/162py
 
