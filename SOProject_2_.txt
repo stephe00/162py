@@ -1,0 +1,77 @@
+STEPHEN OIUM 
+PROJECT 2 
+CS 162 
+Discussion with Classmates. 
+
+1.how do you think you would add file reading and writing functionality to your menu program?
+When adding file reading and writing to my menu program, I begin here: 
+
+with open('Stephen.txt','a') as Stephenfile:
+        StephenfileWriter=csv.writer(Stephenfile)
+        StephenfileWriter.writerow([username,password,firstname,last_name,dob,firstlineaddress,postcode,gender,email])
+        print("Record has been written to file")
+        Stephenfile.close()
+        menu()
+
+a. )how do you think the try and except clauses of Python work and what exactly the FileNotFoundError class is,
+
+Try and except clauses of python works with try seeing if there's an exception clause and if there is not it skips it. 
+If an exception happens during the execution of the try then the rest of the clause has a skip
+if an exception happens that doesnt match the exception name then its passed onto the try. 
+if the type matches the exception keyword, it's executed and continues after the try statement
+
+
+ b. )identify sections of your code that you could create methods out of,
+
+design tests that would show your program working correctly (positive tests and negative tests),
+
+test name, date, age. 
+test Stephen.txt and look for the right username, password, etc. and if it doesn't match then go back to the menu and give "incorrect match, try again" message.
+
+2. ) 
+
+Create a couple test functions that test some functionality for your program (what attributes of your object can be tested for, what functions can be tested, and what guarantees do you have about how this object will behave?)
+(this may require a bit more research than we cover in class so far, but this part of the assignment is graded based on the attempt, not based on writing a professional set of tests)
+
+I created a test function for opening #open file Stephenfile.txt that checks for username and password before being authenticated and going to the url of the github and the url of the video on youtube. 
+
+
+
+When I added test to my program.. 
+3. )
+
+Get another person’s menu program (perhaps here) and remember to keep notes on the following:
+(Note: Also, if you are willing to volunteer your code, feel free to submit it to the public folder!)
+
+Try to add file reading and writing to their program, note whether you accomplish this or not, how difficult was this,
+
+I opened the JonEsplin.py file from the discord. 
+I looked at his code and looked at the characters he was trying to make 
+I created a Test.txt file for reading and writing 
+Inserted my code and made some changes. 
+
+It wasn't super difficult. 
+
+
+
+
+identify sections of their code that you think could or should be made into methods or functions,
+
+Sections of the code that could be made into functions would be the character list function and expand it so the programmer could add more functionality and information to the function 
+
+what tests would show their programming working correctly (or would even break their code!),
+
+pytest or a unittest that would show the character has health points or health and the ammount of ammo and attack it has 
+and a test that would show the characters name, birthday, age, sex, etc. created via a output file called CharacterInfo.txt 
+
+
+
+When you run pydocstyle and pycodestyle on their code (if you have it installed), what warnings and errors do you get?
+
+I didn't run it (yet..)
+
+What do these messages mean?
+
+In your opinion are the programmer’s style differences from the PEP standards acceptable?
+
+The programmer (Jon Esplin) did a good job and their style isn't different from the standards as far as I could tell. 
